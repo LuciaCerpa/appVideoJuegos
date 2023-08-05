@@ -1,0 +1,68 @@
+.navBar {
+  display: flex;
+  padding: .5rem;
+  align-items: center;
+  background: rgb(14, 1, 22);
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.logoC{
+  padding: 0 2rem;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+  flex: 1;
+}
+
+.navBar ul {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex: 3;
+  gap: 4rem;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.navBar ul li {
+  list-style: none;
+}
+
+.linkA{
+  text-decoration: none;
+  color: #03e9f4;
+  font-size: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: purple;
+    font-size: 1.5rem;
+  }
+
+.linkA:hover {
+  text-shadow: 0 0 5px #03e9f4, 
+  0 0 25px #03e9f4, 
+  0 0 50px #03e9f4,
+0 0 100px #03e9f4;
+}
+
+a:hover {
+    text-shadow: 0 0 5px #f403f4, 
+    0 0 25px #f403f4, 
+    0 0 50px #f403f4,
+  0 0 100px #f403f4;
+  }
+
+.buttonC{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  flex: 1;
+}

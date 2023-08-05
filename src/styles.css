@@ -1,1 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.videoJuegosC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    padding-top: 5rem;
+    gap: 3rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    color: #f403f4;
+    font-size: 16px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 2px;
+    background: none;
+  }
+  
+  .button:hover {
+    border: none;
+    cursor: pointer;
+    background: #f403f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #f403f4, 0 0 25px #f403f4, 0 0 50px #f403f4,
+      0 0 100px #f403f4;
+  }
+  
+  body{
+    background-image: url(./assets/img/logo.jpg);
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+}

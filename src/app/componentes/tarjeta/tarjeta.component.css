@@ -1,0 +1,67 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+    height: auto;
+    align-items: center;
+    max-width: 450px;
+    background-color: rgb(31, 1, 64);
+    opacity: .9;
+    color: aqua;
+    text-shadow: 0px 0px 10px aqua;
+}
+
+.container:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+}
+
+.imgC{    
+    justify-content: center;
+}
+
+.imgC img{
+    max-width: 100%;
+    height: auto;
+
+}
+
+.fechaR{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 85%;
+}
+
+.star{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.star img{
+    height: 12px;
+    width: 12px;
+    margin: .2rem;
+}
+
+.descriptionC{
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.buttonC{
+    align-self: flex-end;
+    padding: 2rem .5rem 1rem 0;
+}

@@ -1,0 +1,57 @@
+<div class="login-box">
+  <h2>Agregar nuevo video juego</h2>
+ <form [formGroup]="formAgregarVideoJuego" (ngSubmit)="agregarVideoJuego()">
+    <div class="formC">
+      <div class="colum">
+        <div class="user-box">
+            <label>Título</label>
+          <input type="text" name="title" formControlName="title" />
+        </div>
+        <div class="user-box">
+            <label>Clasificación:</label>
+          <input type="number" name="rating" formControlName="rating" min="1" max="5" minlength="1" maxlength="1" pattern="[1-5]"/>
+          <p class="warning" *ngIf="!formAgregarVideoJuego.controls['rating'].valid && formAgregarVideoJuego.controls['rating'].touched">por favor introduce un numero del 1 al 5</p>
+        </div>
+        <div class="user-box">
+            <label>Descripción:</label>
+          <input type="text" name="description" formControlName="description" />
+        </div>
+        <div class="checkbox">
+          <label for="comingSoon">Próximamente:</label>
+          <input
+            type="checkbox"
+            name="comingSoon"
+            formControlName="comingSoon"
+          />
+        </div>
+      </div>
+      <div class="colum">
+        <div class="user-box">
+            <label>Fecha de lanzamiento:</label>
+          <input type="text" name="releaseDate" formControlName="releaseDate" />
+        </div>
+        <div class="user-box">
+            <label>Número de descargas:</label>
+          <input type="number" name="downloads" formControlName="downloads" />
+        </div>
+        <div class="user-box">
+          <label for="image">Url de la imagen (opcional):</label>
+          <input
+            type="text"
+            name="image"
+            formControlName="image"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="form-btn">
+      <button type="submit" >
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Agregar
+      </button>
+    </div>
+  </form> 
+</div>

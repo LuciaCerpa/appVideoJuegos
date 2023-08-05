@@ -1,0 +1,34 @@
+<div class="login-box">
+    <h2>Registro</h2>
+    <form [formGroup]="formRegistro" (ngSubmit)="registro()">
+      <div class="user-box">
+        <input type="text" name="name" formControlName="name">
+        <label>Nombre</label>
+      </div>
+      <div class="user-box">
+        <input type="email" name="email" formControlName="email">
+        <label>Correo</label>
+      </div>
+      <div class="user-box">
+        <input type="password" name="password" formControlName="password">
+        <label>Contraseña</label>
+      </div>
+      <div class="user-box">
+        <input type="password" name="passwordC" formControlName="passwordC">
+        <label>Confirmar Contraseña</label>
+      </div>
+      <div class="form-btn">
+        <button type="submit">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Registrar
+        </button>
+      </div>
+    </form>
+    <div class="bottom-form">
+      <p>Ya tienes cuenta?</p>
+      <a href="/">Iniciar sesión</a>
+    </div>
+  </div>

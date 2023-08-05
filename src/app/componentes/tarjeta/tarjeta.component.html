@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="imgC">
+        <h2>{{videoJuego.title}}</h2>
+        <img [src]="videoJuego.image" alt="">
+    </div>
+    <div class="fechaR">
+        <p>Fecha de lanzamiento: <br> {{videoJuego.releaseDate}}</p>
+        <div class="star">
+            <img src="./assets/img/star.png" alt="estrella icono" *ngFor="let estrella of estrellas">
+        </div>
+    </div>
+    <div class="descriptionC">
+        <p>Descripcion: <br><br>{{videoJuego.description}}</p>
+    </div>
+    <div class="buttonC">
+        <button class="button">Agregar al Carrito</button>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+.body{
+    background-image: url(../assets/img/logo.jpg);
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;flex-direction: column;
+}
